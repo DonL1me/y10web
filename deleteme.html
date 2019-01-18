@@ -1,0 +1,24 @@
+
+<html>
+    <style>
+        #printme{
+            background-color:beige;
+            color: darkblue;
+            height: 200;
+            text-align: center;
+            vertical-align: middle;
+        }
+        button {
+            color: dodgerblue;
+            padding: 7px;
+        }
+    </style>
+    <div id="printme"></div>
+        <button onclick="myfunction()">clickme</button>
+    <script>
+        function myfunction(){
+            var mydiv = document.getElementById("printme");
+            mydiv.innerHTML = "Hello World!";
+        }
+    </script>
+</html>
