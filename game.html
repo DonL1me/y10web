@@ -22,15 +22,13 @@
      var vx = 5.0;
     
     var vy;
-    
-
-    var bounce = 1; 
 
  
     function init(){
        setupCanvas();
       vy = (Math.random() * -15) + -5;
-        ball = {x:canvas.width / 2, y:100, radius:20, status: 0,   color:"red"};
+        ball = {x:canvas.width / 2, y:100, radius:5
+                0, status: 0,   color:"red"};
  
     }
  
@@ -68,7 +66,7 @@
            
            ball.y = canvas.height - ball.radius;
          
-              vy *= -bounce;
+              vy *= -1;
            
              xF();
              
@@ -79,7 +77,7 @@
         
            ball.y = 0 - ball.radius;
       
-              vy *= -bounce;
+              vy *= -1;
            
              xF();
              
